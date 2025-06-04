@@ -16,12 +16,16 @@ class CookieGuardianPopup {
 
   async getCurrentTab() {
     try {
-      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+      const [tab] = await chrome.tabs.query({
+        active: true,
+        currentWindow: true,
+      });
       this.currentTab = tab;
-      
+
       if (tab.url && !tab.url.startsWith('chrome://')) {
         this.currentDomain = new URL(tab.url).hostname;
-        document.getElementById('currentDomain').textContent = this.currentDomain;
+        document.getElementById('currentDomain').textContent =
+          this.currentDomain;
       } else {
         document.getElementById('currentDomain').textContent = 'Chrome-Seite';
         this.disableActions();
@@ -36,7 +40,7 @@ class CookieGuardianPopup {
   setupEventListeners() {
     // Quick action buttons
     const actionButtons = document.querySelectorAll('.action-btn');
-    actionButtons.forEach(button => {
+    actionButtons.forEach((button) => {
       button.addEventListener('click', (e) => {
         const action = e.target.dataset.action;
         this.setDomainAction(action);
@@ -60,7 +64,7 @@ class CookieGuardianPopup {
     try {
       const response = await chrome.runtime.sendMessage({
         action: 'getDomainSetting',
-        domain: this.currentDomain
+        domain: this.currentDomain,
       });
 
       this.domainSetting = response.setting;
@@ -76,27 +80,35 @@ class CookieGuardianPopup {
     const actionButtons = document.querySelectorAll('.action-btn');
 
     // Reset button states
-    actionButtons.forEach(btn => btn.classList.remove('active'));
+    actionButtons.forEach((btn) => btn.classList.remove('active'));
 
     if (this.domainSetting) {
       const action = this.domainSetting.action;
-      const timestamp = new Date(this.domainSetting.timestamp).toLocaleDateString('de-DE');
+      const timestamp = new Date(
+        this.domainSetting.timestamp
+      ).toLocaleDateString('de-DE');
 
       switch (action) {
         case 'block':
           statusIndicator.className = 'status-indicator red';
           statusText.textContent = `Cookies werden blockiert (seit ${timestamp})`;
-          document.querySelector('[data-action="block"]').classList.add('active');
+          document
+            .querySelector('[data-action="block"]')
+            .classList.add('active');
           break;
         case 'essential':
           statusIndicator.className = 'status-indicator yellow';
-          statusText.textContent = `Nur essentiielle Cookies (seit ${timestamp})`;
-          document.querySelector('[data-action="essential"]').classList.add('active');
+          statusText.textContent = `Nur essentielle Cookies (seit ${timestamp})`;
+          document
+            .querySelector('[data-action="essential"]')
+            .classList.add('active');
           break;
         case 'accept':
           statusIndicator.className = 'status-indicator green';
           statusText.textContent = `Alle Cookies akzeptiert (seit ${timestamp})`;
-          document.querySelector('[data-action="accept"]').classList.add('active');
+          document
+            .querySelector('[data-action="accept"]')
+            .classList.add('active');
           break;
       }
     } else {
@@ -112,13 +124,13 @@ class CookieGuardianPopup {
       await chrome.runtime.sendMessage({
         action: 'saveDomainSetting',
         domain: this.currentDomain,
-        setting: action
+        setting: action,
       });
 
       // Update local state
       this.domainSetting = {
         action: action,
-        timestamp: Date.now()
+        timestamp: Date.now(),
       };
 
       this.updateStatusDisplay();
@@ -129,7 +141,6 @@ class CookieGuardianPopup {
 
       // Show success feedback
       this.showFeedback('Einstellung gespeichert!');
-
     } catch (error) {
       console.error('Error setting domain action:', error);
       this.showFeedback('Fehler beim Speichern', 'error');
@@ -142,7 +153,7 @@ class CookieGuardianPopup {
     try {
       await chrome.runtime.sendMessage({
         action: 'clearDomainSetting',
-        domain: this.currentDomain
+        domain: this.currentDomain,
       });
 
       this.domainSetting = null;
@@ -151,7 +162,6 @@ class CookieGuardianPopup {
 
       // Reload the current tab
       chrome.tabs.reload(this.currentTab.id);
-
     } catch (error) {
       console.error('Error clearing domain setting:', error);
       this.showFeedback('Fehler beim Löschen', 'error');
@@ -161,14 +171,15 @@ class CookieGuardianPopup {
   async loadStats() {
     try {
       const response = await chrome.runtime.sendMessage({
-        action: 'getStats'
+        action: 'getStats',
       });
 
       const stats = response.stats;
       document.getElementById('blockedCount').textContent = stats.blocked || 0;
-      document.getElementById('essentialCount').textContent = stats.essential || 0;
-      document.getElementById('acceptedCount').textContent = stats.accepted || 0;
-
+      document.getElementById('essentialCount').textContent =
+        stats.essential || 0;
+      document.getElementById('acceptedCount').textContent =
+        stats.accepted || 0;
     } catch (error) {
       console.error('Error loading stats:', error);
     }
@@ -176,7 +187,7 @@ class CookieGuardianPopup {
 
   disableActions() {
     const actionButtons = document.querySelectorAll('.action-btn');
-    actionButtons.forEach(button => {
+    actionButtons.forEach((button) => {
       button.disabled = true;
       button.style.opacity = '0.5';
     });
