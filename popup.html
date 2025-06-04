@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cookie Guardian</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <div class="header-content">
+        <div class="logo">🛡️ Cookie Guardian</div>
+        <div class="current-domain" id="currentDomain">Lade...</div>
+      </div>
+    </header>
+    
+    <main class="popup-main">
+      <div class="domain-status" id="domainStatus">
+        <div class="status-indicator" id="statusIndicator"></div>
+        <div class="status-text" id="statusText">Status wird geladen...</div>
+      </div>
+      
+      <div class="quick-actions" id="quickActions">
+        <button class="action-btn block" data-action="block">
+          🔴 Blockieren
+        </button>
+        <button class="action-btn essential" data-action="essential">
+          🟡 Essentiell
+        </button>
+        <button class="action-btn accept" data-action="accept">
+          🟢 Akzeptieren
+        </button>
+      </div>
+      
+      <div class="stats-section">
+        <h3>Statistiken</h3>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" id="blockedCount">0</div>
+            <div class="stat-label">Blockiert</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="essentialCount">0</div>
+            <div class="stat-label">Essentiell</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="acceptedCount">0</div>
+            <div class="stat-label">Akzeptiert</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="actions-section">
+        <button class="secondary-btn" id="clearDomainBtn">
+          Domain-Einstellung löschen
+        </button>
+        <button class="secondary-btn" id="settingsBtn">
+          Einstellungen
+        </button>
+      </div>
+    </main>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
