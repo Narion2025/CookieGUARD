@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archetypen Voice Bot - Entdecke deine Persönlichkeit</title>
+    <title>🔥 Archetypen-Schmied - Entdecke deine Persönlichkeit</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -16,10 +16,10 @@
         <!-- Header -->
         <header class="header">
             <div class="logo">
-                <i class="fas fa-masks-theater"></i>
-                <h1>Archetypen Voice Bot</h1>
+                <i class="fas fa-hammer"></i>
+                <h1>🔥 Archetypen-Schmied</h1>
             </div>
-            <p class="subtitle">Entdecke deine Jung'schen Archetypen durch Sprache</p>
+            <p class="subtitle">Entdecke deine Jung'schen Archetypen durch mystische Gespräche</p>
         </header>
 
         <!-- Main Content -->
@@ -42,25 +42,38 @@
                         <h3>🎙️ Sprich mit dem Schmied</h3>
                         <p>Führe ein mystisches Gespräch mit dem Archetypen-Schmied:</p>
                         
-                        <!-- Debug Info -->
-                        <div class="debug-info" style="background: rgba(255,140,0,0.1); padding: 10px; border-radius: 5px; margin: 10px 0; font-size: 0.9em;">
-                            <strong>🔧 Troubleshooting:</strong><br>
-                            • Stelle sicher, dass dein <strong>Mikrofon aktiviert</strong> ist<br>
-                            • Erlaube <strong>Mikrofon-Zugriff</strong> im Browser<br>
-                            • Teste mit <strong>Kopfhörern</strong> für bessere Qualität<br>
-                            • Bei Problemen: Nutze die schriftliche Analyse unten
+                        <!-- Widget Status -->
+                        <div id="widget-status" style="margin: 15px 0; padding: 15px; background: rgba(255,140,0,0.1); border-radius: 8px; border: 2px solid #ff8c00;">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                <span style="font-size: 1.2em;">🔧</span>
+                                <strong>Widget Status:</strong> 
+                                <span id="status-text" style="color: #ff8c00;">Lädt...</span>
+                            </div>
+                            
+                            <div style="margin: 10px 0;">
+                                <button onclick="testWidget()" style="padding: 8px 15px; background: #ff8c00; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                                    🎙️ Widget & Mikrofon testen
+                                </button>
+                                <button onclick="openDirect()" style="padding: 8px 15px; background: #ff4500; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin-left: 10px;">
+                                    🔗 Direkt öffnen
+                                </button>
+                            </div>
+                            
+                            <div id="debug-info" style="font-size: 0.9em; color: #666; margin-top: 10px;">
+                                <strong>Troubleshooting:</strong><br>
+                                • Stelle sicher, dass dein <strong>Mikrofon aktiviert</strong> ist<br>
+                                • Erlaube <strong>Mikrofon-Zugriff</strong> im Browser<br>
+                                • Teste mit <strong>Kopfhörern</strong> für bessere Qualität<br>
+                                • Bei Problemen: Nutze "Direkt öffnen" oder die schriftliche Analyse
+                            </div>
                         </div>
                         
-                        <div class="widget-wrapper">
-                            <elevenlabs-convai agent-id="agent_01jxn7kxjpfvt87rphxdnq1ddj"></elevenlabs-convai>
-                        </div>
-                        
-                        <!-- Fallback Link -->
-                        <div class="fallback-link" style="margin-top: 15px;">
-                            <a href="https://elevenlabs.io/convai/agent_01jxn7kxjpfvt87rphxdnq1ddj" target="_blank" 
-                               style="color: #ff8c00; text-decoration: underline;">
-                               🔗 Direkt zu ElevenLabs öffnen (falls Widget nicht lädt)
-                            </a>
+                        <!-- ElevenLabs Widget -->
+                        <div class="widget-wrapper" style="border: 2px solid #ff8c00; border-radius: 10px; padding: 15px; background: rgba(255,140,0,0.05);">
+                            <elevenlabs-convai 
+                                agent-id="agent_01jxn7kxjpfvt87rphxdnq1ddj"
+                                style="width: 100%; min-height: 80px; display: block;">
+                            </elevenlabs-convai>
                         </div>
                     </div>
                     
@@ -173,5 +186,71 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
+    
+    <!-- Widget Debug Script -->
+    <script>
+        // Widget Debug Functions
+        function testWidget() {
+            const statusText = document.getElementById('status-text');
+            const widget = document.querySelector('elevenlabs-convai');
+            
+            statusText.innerHTML = '🔄 Teste Widget...';
+            
+            if (widget) {
+                statusText.innerHTML = '✅ Widget gefunden! Teste Mikrofon...';
+                
+                // Test Mikrofon-Zugriff
+                navigator.mediaDevices.getUserMedia({ audio: true })
+                    .then(stream => {
+                        statusText.innerHTML = '🎙️ Mikrofon OK! Widget sollte funktionieren.';
+                        stream.getTracks().forEach(track => track.stop());
+                        
+                        // Versuche Widget zu aktivieren
+                        setTimeout(() => {
+                            if (widget.shadowRoot || widget.innerHTML.trim()) {
+                                statusText.innerHTML = '🔥 Widget aktiv! Klicke auf das Mikrofon-Symbol.';
+                            } else {
+                                statusText.innerHTML = '⚠️ Widget geladen, aber noch nicht bereit. Warte 5 Sekunden...';
+                            }
+                        }, 1000);
+                    })
+                    .catch(err => {
+                        statusText.innerHTML = '❌ Mikrofon-Fehler: ' + err.message + ' - Nutze "Direkt öffnen"';
+                    });
+            } else {
+                statusText.innerHTML = '❌ Widget nicht gefunden! Nutze "Direkt öffnen"';
+            }
+        }
+
+        function openDirect() {
+            window.open('https://elevenlabs.io/convai/agent_01jxn7kxjpfvt87rphxdnq1ddj', '_blank');
+        }
+
+        // Auto-check when page loads
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                const widget = document.querySelector('elevenlabs-convai');
+                const statusText = document.getElementById('status-text');
+                
+                if (widget) {
+                    statusText.innerHTML = '✅ Widget geladen - Klicke "Testen"';
+                } else {
+                    statusText.innerHTML = '❌ Widget nicht geladen - Nutze "Direkt öffnen"';
+                }
+            }, 3000);
+        });
+
+        // Check for widget updates every 2 seconds
+        setInterval(() => {
+            const widget = document.querySelector('elevenlabs-convai');
+            const statusText = document.getElementById('status-text');
+            
+            if (widget && widget.shadowRoot) {
+                if (statusText.innerHTML.includes('Lädt') || statusText.innerHTML.includes('geladen')) {
+                    statusText.innerHTML = '🔥 Widget bereit! Klicke auf das Mikrofon.';
+                }
+            }
+        }, 2000);
+    </script>
 </body>
 </html> 

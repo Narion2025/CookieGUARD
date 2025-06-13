@@ -43,3 +43,6 @@ prompts/image_prompt_user_*.txt
 prompts/MADNESS_prompt_user_*.txt
 prompts/package_summary_*.md
 prompts/CHAOS_PACKAGE_SUMMARY_*.md
+
+# Local Netlify folder
+.netlify

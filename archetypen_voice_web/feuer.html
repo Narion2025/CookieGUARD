@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Archetypen-Schmied</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000000;
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Großes Feuer-Hintergrundbild */
+        .fire-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)),
+                radial-gradient(circle at center, rgba(255, 69, 0, 0.4) 0%, rgba(255, 140, 0, 0.2) 30%, transparent 70%),
+                radial-gradient(circle at 30% 70%, rgba(255, 69, 0, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(255, 140, 0, 0.3) 0%, transparent 50%),
+                #000000;
+            z-index: -1;
+        }
+
+        /* Dezenter Header */
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 140, 0, 0.1);
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: rgba(255, 140, 0, 0.9);
+        }
+
+        .logo-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Hauptinhalt zentriert */
+        .main-content {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 40px 40px;
+            text-align: center;
+        }
+
+        /* Eleganter Titel */
+        .title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            text-shadow: 0 0 30px rgba(255, 140, 0, 0.3);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: rgba(255, 140, 0, 0.8);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* Dezenter Call-to-Action */
+        .cta-section {
+            margin-top: 2rem;
+        }
+
+        .cta-button {
+            background: rgba(255, 140, 0, 0.1);
+            border: 2px solid rgba(255, 140, 0, 0.3);
+            color: #ffffff;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 300;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background: rgba(255, 140, 0, 0.2);
+            border-color: rgba(255, 140, 0, 0.6);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 140, 0, 0.2);
+        }
+
+        /* Subtile Feuer-Animation */
+        .fire-glow {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 69, 0, 0.1) 0%, transparent 70%);
+            animation: fireGlow 4s ease-in-out infinite alternate;
+            pointer-events: none;
+        }
+
+        .fire-glow:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .fire-glow:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        @keyframes fireGlow {
+            from {
+                opacity: 0.3;
+                transform: scale(1);
+            }
+            to {
+                opacity: 0.6;
+                transform: scale(1.2);
+            }
+        }
+
+        /* Navigation zurück */
+        .back-nav {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            z-index: 101;
+        }
+
+        .back-link {
+            color: rgba(255, 140, 0, 0.7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 300;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+            background: rgba(255, 140, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px 20px;
+            }
+            
+            .main-content {
+                padding: 80px 20px 20px;
+            }
+            
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .back-nav {
+                right: 20px;
+            }
+        }
+
+        /* Subtile Partikel-Animation */
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 140, 0, 0.6);
+            border-radius: 50%;
+            animation: particleFloat 6s infinite linear;
+            pointer-events: none;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) translateX(20px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Feuer Hintergrund -->
+    <div class="fire-background"></div>
+    
+    <!-- Subtile Glüh-Effekte -->
+    <div class="fire-glow"></div>
+    <div class="fire-glow"></div>
+
+    <!-- Dezenter Header -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">⚒️</span>
+            <span>Archetypen-Schmied</span>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="back-nav">
+        <a href="index.html" class="back-link">← Zurück</a>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <main class="main-content">
+        <h1 class="title">Das ewige Feuer</h1>
+        
+        <p class="subtitle">
+            Im Herzen der Schmiede brennt das Feuer der Erkenntnis. 
+            Hier werden die Archetypen geboren, geformt und in ihrer wahren Essenz offenbart.
+        </p>
+        
+        <div class="cta-section">
+            <a href="index.html" class="cta-button">
+                Mit dem Schmied sprechen
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // Subtile Partikel erstellen
+        function createParticles() {
+            const container = document.body;
+            
+            for (let i = 0; i < 15; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
+                
+                container.appendChild(particle);
+                
+                // Partikel nach Animation entfernen
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 8000);
+            }
+        }
+
+        // Kontinuierliche subtile Partikel
+        setInterval(createParticles, 4000);
+        
+        // Initiale Partikel
+        createParticles();
+    </script>
+</body>
+</html> 
