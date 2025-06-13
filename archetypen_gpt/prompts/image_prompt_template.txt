@@ -1,0 +1,35 @@
+**Archetypen-Profilbild für {{username}}**
+
+Stil: Hyperrealistisches digitales Portrait, cinematic lighting, 8K Auflösung
+
+**Hauptarchetyp {{archetype_1}} ({{archetype_1_score}}):**
+- Gesichtsausdruck: {{archetype_1_expression}}
+- Symbolik: {{archetype_1_symbols}}
+- Farbtöne: {{archetype_1_colors}}
+
+**Sekundärarchetyp {{archetype_2}} ({{archetype_2_score}}):**
+- Zusätzliche Elemente: {{archetype_2_elements}}
+- Komplementärfarben: {{archetype_2_accent_colors}}
+
+**Spiral Dynamics {{spiral_primary}} Integration:**
+- Hintergrund-Energie: {{spiral_background}}
+- Licht-Qualität: {{spiral_lighting}}
+
+**Schatten-Integration {{shadow_pattern}}:**
+- Subtile Spannung: {{shadow_visual_tension}}
+- Dualität zeigen: {{shadow_duality}}
+
+**Komposition:**
+- Blickrichtung: {{gaze_direction}}
+- Pose: {{body_posture}}
+- Ambiente: {{environment_setting}}
+
+**Besondere Marker:**
+{{visual_markers}}
+
+**Technische Spezifikation:**
+- Kameraperspektive: {{camera_angle}}
+- Lichtsetup: {{lighting_setup}}
+- Nachbearbeitung: {{post_processing}}
+
+Portrait soll {{username}}'s einzigartige psychodynamische Signatur visuell verkörpern - kraftvoll, authentisch, mit einer Aura der Tiefe und des Mysteriösen.

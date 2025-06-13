@@ -1,0 +1,50 @@
+archetypes:
+- evidence:
+  - 'Antwort-Cluster: 4 Treffer'
+  light: Mut & Verantwortung
+  name: Held
+  score: 0.8
+  shadow: Größenwahn & Burnout
+- evidence:
+  - 'Antwort-Cluster: 2 Treffer'
+  light: Reinheit & Optimismus
+  name: Unschuldiger
+  score: 0.8
+  shadow: Naivität & Verdrängung
+- evidence:
+  - 'Antwort-Cluster: 3 Treffer'
+  light: Führung & Ordnung
+  name: Herrscher
+  score: 0.8
+  shadow: Tyrannei & Kontrollzwang
+integration_theme: Macht & Verantwortung integrieren
+markers:
+- Verantwortung
+- Macht
+- Mut
+- Angst
+- Kontrolle
+shadow:
+  compensation:
+  - Perfektionismus, Rückzug, Größenfantasien
+  - Überplanung, Kontrolle, Vermeidung
+  integration: Niedrig - Wenig Bewusstsein
+  pattern: Vermeidung
+  triggers:
+  - Konflikt
+  - Konfrontation
+  - Wahrheit
+spiral_dynamics:
+  integration: Gelb
+  primary: Grün
+  resistance: Orange
+  secondary: Orange
+  tensions:
+  - Ordnung vs. Individualität vs. Harmonie
+  - Impuls vs. Kontrolle vs. Strategie
+  - Wettbewerb vs. Kooperation vs. Integration
+tensions:
+- Held vs. Unschuldiger
+- Grün → Gelb
+- 'Schatten: Vermeidung'
+username: ben

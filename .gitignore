@@ -26,3 +26,20 @@ build/
 # Logs
 *.log
 logs/ 
+# Archetypen-GPT
+*.env
+config/user_tracking.json
+config/openai_keys.json
+config/assistants.json
+__pycache__/
+*.pyc
+answers/
+profiles/profile_user_*.json
+profiles/profile_user_*.md
+profiles/profile_user_*.yaml
+prompts/generated_prompt_user_*.txt
+prompts/advanced_prompt_user_*.txt
+prompts/image_prompt_user_*.txt
+prompts/MADNESS_prompt_user_*.txt
+prompts/package_summary_*.md
+prompts/CHAOS_PACKAGE_SUMMARY_*.md

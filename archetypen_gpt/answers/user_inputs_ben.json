@@ -1,0 +1,533 @@
+{
+  "archetypen": [
+    {
+      "question_id": "A1",
+      "question_text": "Stell dir vor, du stehst vor einer wichtigen Entscheidung, die dein Leben verändert. Was hält dich am meisten zurück?",
+      "answer": "b",
+      "follow_up_answer": "b",
+      "metadata": {
+        "id": "A1",
+        "archetypes": [
+          "Held",
+          "Unschuldiger",
+          "Krieger"
+        ],
+        "markers": [
+          "Mut",
+          "Angst",
+          "Verantwortung"
+        ],
+        "shadow": "Größenwahn vs. Ohnmacht"
+      },
+      "timestamp": 65712.650758041
+    },
+    {
+      "question_id": "A2",
+      "question_text": "Wenn alles um dich herum chaotisch wird, was ist deine erste Reaktion?",
+      "answer": "b",
+      "follow_up_answer": "b",
+      "metadata": {
+        "id": "A2",
+        "archetypes": [
+          "Herrscher",
+          "Magier",
+          "Rebell"
+        ],
+        "markers": [
+          "Kontrolle",
+          "Macht",
+          "Ordnung"
+        ],
+        "shadow": "Tyrannei vs. Chaos"
+      },
+      "timestamp": 65748.568900083
+    },
+    {
+      "question_id": "A3",
+      "question_text": "In einer tiefen Beziehung fürchtest du am meisten:",
+      "answer": "a",
+      "follow_up_answer": "a",
+      "metadata": {
+        "id": "A3",
+        "archetypes": [
+          "Liebender",
+          "Fürsorger",
+          "Jedermann"
+        ],
+        "markers": [
+          "Nähe",
+          "Verbindung",
+          "Hingabe"
+        ],
+        "shadow": "Verschmelzung vs. Isolation"
+      },
+      "timestamp": 65841.189724291
+    },
+    {
+      "question_id": "A4",
+      "question_text": "Wenn du etwas nicht verstehst, was machst du?",
+      "answer": "a",
+      "follow_up_answer": "a",
+      "metadata": {
+        "id": "A4",
+        "archetypes": [
+          "Weise",
+          "Forscher",
+          "Narr"
+        ],
+        "markers": [
+          "Wissen",
+          "Verstehen",
+          "Wahrheit"
+        ],
+        "shadow": "Arroganz vs. Ignoranz"
+      },
+      "timestamp": 65855.980144083
+    },
+    {
+      "question_id": "A5",
+      "question_text": "Dein größter Antrieb beim Erschaffen ist:",
+      "answer": "c",
+      "follow_up_answer": "c",
+      "metadata": {
+        "id": "A5",
+        "archetypes": [
+          "Schöpfer",
+          "Künstler",
+          "Visionär"
+        ],
+        "markers": [
+          "Kreativität",
+          "Ausdruck",
+          "Vision"
+        ],
+        "shadow": "Perfektionismus vs. Chaos"
+      },
+      "timestamp": 66022.466187916
+    },
+    {
+      "question_id": "A6",
+      "question_text": "Regeln sind für dich:",
+      "answer": "b",
+      "follow_up_answer": "b",
+      "metadata": {
+        "id": "A6",
+        "archetypes": [
+          "Rebell",
+          "Forscher",
+          "Held"
+        ],
+        "markers": [
+          "Freiheit",
+          "Grenzen",
+          "Widerstand"
+        ],
+        "shadow": "Rebellion vs. Konformität"
+      },
+      "timestamp": 66040.744609458
+    },
+    {
+      "question_id": "A7",
+      "question_text": "Erfolg bedeutet für dich vor allem:",
+      "answer": "d",
+      "follow_up_answer": "d",
+      "metadata": {
+        "id": "A7",
+        "archetypes": [
+          "Held",
+          "Herrscher",
+          "Magier"
+        ],
+        "markers": [
+          "Erfolg",
+          "Anerkennung",
+          "Leistung"
+        ],
+        "shadow": "Narzissmus vs. Selbstzweifel"
+      },
+      "timestamp": 66059.742196333
+    },
+    {
+      "question_id": "A8",
+      "question_text": "Mit Verlusten gehst du um, indem du:",
+      "answer": "a",
+      "follow_up_answer": "a",
+      "metadata": {
+        "id": "A8",
+        "archetypes": [
+          "Weise",
+          "Fürsorger",
+          "Jedermann"
+        ],
+        "markers": [
+          "Verlust",
+          "Trauer",
+          "Akzeptanz"
+        ],
+        "shadow": "Festhalten vs. Loslassen"
+      },
+      "timestamp": 66082.228919791
+    },
+    {
+      "question_id": "A9",
+      "question_text": "Wenn du Macht über andere hast, neigst du dazu:",
+      "answer": "c",
+      "follow_up_answer": "c",
+      "metadata": {
+        "id": "A9",
+        "archetypes": [
+          "Herrscher",
+          "Fürsorger",
+          "Held"
+        ],
+        "markers": [
+          "Macht",
+          "Verantwortung",
+          "Führung"
+        ],
+        "shadow": "Kontrolle vs. Ohnmacht"
+      },
+      "timestamp": 66097.980036291
+    },
+    {
+      "question_id": "A10",
+      "question_text": "Deine Beziehung zum Spirituellen ist:",
+      "answer": "c",
+      "follow_up_answer": "c",
+      "metadata": {
+        "id": "A10",
+        "archetypes": [
+          "Weise",
+          "Magier",
+          "Unschuldiger"
+        ],
+        "markers": [
+          "Spiritualität",
+          "Sinn",
+          "Transzendenz"
+        ],
+        "shadow": "Erleuchtung vs. Illusion"
+      },
+      "timestamp": 66119.256515416
+    }
+  ],
+  "schatten": [
+    {
+      "question_id": "S1",
+      "question_text": "Was vermeidest du um jeden Preis, auch wenn du weißt, dass es wichtig wäre?",
+      "answer": "d",
+      "follow_up_answer": "d",
+      "metadata": {
+        "id": "S1",
+        "shadow_pattern": "Vermeidung",
+        "triggers": [
+          "Konflikt",
+          "Konfrontation",
+          "Wahrheit"
+        ],
+        "projection": "Andere sind aggressiv/feindselig"
+      },
+      "timestamp": 66140.580185333
+    },
+    {
+      "question_id": "S2",
+      "question_text": "Wofür schämst du dich am meisten, auch wenn es vielleicht irrational ist?",
+      "answer": "b",
+      "follow_up_answer": "b",
+      "metadata": {
+        "id": "S2",
+        "shadow_pattern": "Scham",
+        "triggers": [
+          "Bloßstellung",
+          "Versagen",
+          "Ablehnung"
+        ],
+        "compensation": "Perfektionismus, Rückzug, Größenfantasien"
+      },
+      "timestamp": 66161.594637166
+    },
+    {
+      "question_id": "S3",
+      "question_text": "Welche Eigenschaften an anderen Menschen regen dich am meisten auf?",
+      "answer": "c",
+      "follow_up_answer": "c",
+      "metadata": {
+        "id": "S3",
+        "shadow_pattern": "Projektion",
+        "triggers": [
+          "Kritik",
+          "Zurückweisung",
+          "Ohnmacht"
+        ],
+        "projection_target": "Eigenschaften, die man selbst ablehnt"
+      },
+      "timestamp": 66183.301020125
+    },
+    {
+      "question_id": "S4",
+      "question_text": "Wann fühlst du dich am hilflosesten?",
+      "answer": "d",
+      "follow_up_answer": "d",
+      "metadata": {
+        "id": "S4",
+        "shadow_pattern": "Kontrollzwang",
+        "triggers": [
+          "Unvorhersehbarkeit",
+          "Abhängigkeit",
+          "Chaos"
+        ],
+        "compensation": "Überplanung, Kontrolle, Vermeidung"
+      },
+      "timestamp": 66200.656160125
+    },
+    {
+      "question_id": "S5",
+      "question_text": "Wann hast du dir selbst im Weg gestanden oder dich selbst sabotiert?",
+      "answer": "b",
+      "follow_up_answer": "b",
+      "metadata": {
+        "id": "S5",
+        "shadow_pattern": "Selbstsabotage",
+        "triggers": [
+          "Erfolg",
+          "Glück",
+          "Anerkennung"
+        ],
+        "sabotage_methods": [
+          "Prokrastination",
+          "Selbstzweifel",
+          "Rückzug"
+        ]
+      },
+      "timestamp": 66220.085407125
+    },
+    {
+      "question_id": "S6",
+      "question_text": "Wenn du deinen 'inneren Kritiker' oder 'Saboteur' als Person vor dir hättest, was würdest du zu ihm sagen?",
+      "answer": "ich frage ihn, was er weiß und welche zusammenhänge er in den dingen sieht",
+      "follow_up_answer": "ich frage ihn, was er weiß und welche zusammenhänge er in den dingen sieht",
+      "metadata": {
+        "id": "S6",
+        "shadow_pattern": "Integration",
+        "goal": "Bewusstwerdung und Annahme",
+        "integration_signs": [
+          "Selbstmitgefühl",
+          "Humor",
+          "Akzeptanz"
+        ]
+      },
+      "timestamp": 66288.534477416
+    }
+  ],
+  "spiral_dynamics": [
+    {
+      "question_id": "SD1",
+      "question_text": "Wann hast du zuletzt eine Regel gebrochen und was hat dich dabei gebremst oder angetrieben?",
+      "answer": "d",
+      "follow_up_answer": "d",
+      "metadata": {
+        "id": "SD1",
+        "spiral_levels": [
+          "Blau",
+          "Orange",
+          "Grün"
+        ],
+        "tension": "Ordnung vs. Individualität vs. Harmonie",
+        "indicators": [
+          "Gehorsam",
+          "Rebellion",
+          "Konsens"
+        ]
+      },
+      "timestamp": 66315.234326583
+    },
+    {
+      "question_id": "SD2",
+      "question_text": "Wenn du dich durchsetzen musst, was ist deine bevorzugte Strategie?",
+      "answer": "c",
+      "follow_up_answer": "c",
+      "metadata": {
+        "id": "SD2",
+        "spiral_levels": [
+          "Rot",
+          "Blau",
+          "Orange"
+        ],
+        "tension": "Impuls vs. Kontrolle vs. Strategie",
+        "indicators": [
+          "Aggression",
+          "Disziplin",
+          "Diplomatie"
+        ]
+      },
+      "timestamp": 66339.515090416
+    },
+    {
+      "question_id": "SD3",
+      "question_text": "Was motiviert dich am meisten bei der Arbeit oder in Projekten?",
+      "answer": "c",
+      "follow_up_answer": "c",
+      "metadata": {
+        "id": "SD3",
+        "spiral_levels": [
+          "Orange",
+          "Grün",
+          "Gelb"
+        ],
+        "tension": "Wettbewerb vs. Kooperation vs. Integration",
+        "indicators": [
+          "Ambition",
+          "Gemeinschaft",
+          "Systemdenken"
+        ]
+      },
+      "timestamp": 66416.633500583
+    },
+    {
+      "question_id": "SD4",
+      "question_text": "Wann fühlst du dich am meisten zugehörig?",
+      "answer": "d",
+      "follow_up_answer": "d",
+      "metadata": {
+        "id": "SD4",
+        "spiral_levels": [
+          "Lila",
+          "Blau",
+          "Grün"
+        ],
+        "tension": "Stamm vs. Ordnung vs. Vielfalt",
+        "indicators": [
+          "Tradition",
+          "Gehorsam",
+          "Inklusion"
+        ]
+      },
+      "timestamp": 66440.662155666
+    },
+    {
+      "question_id": "SD5",
+      "question_text": "Wie reagierst du auf große Veränderungen in deinem Leben?",
+      "answer": "g",
+      "follow_up_answer": "g",
+      "metadata": {
+        "id": "SD5",
+        "spiral_levels": [
+          "Beige",
+          "Lila",
+          "Rot",
+          "Blau",
+          "Orange",
+          "Grün",
+          "Gelb",
+          "Türkis"
+        ],
+        "tension": "Sicherheit vs. Wachstum",
+        "change_attitude": "Reaktion auf Wandel"
+      },
+      "timestamp": 66482.846886875
+    },
+    {
+      "question_id": "SD6",
+      "question_text": "Bei starken Meinungsverschiedenheiten neigst du dazu:",
+      "answer": "d",
+      "follow_up_answer": "d",
+      "metadata": {
+        "id": "SD6",
+        "spiral_levels": [
+          "Rot",
+          "Blau",
+          "Orange",
+          "Grün",
+          "Gelb"
+        ],
+        "conflict_style": "Umgang mit Widersprüchen",
+        "resolution_preference": "Lösungsansatz"
+      },
+      "timestamp": 66504.54869825
+    },
+    {
+      "question_id": "SD7",
+      "question_text": "Woher beziehst du hauptsächlich deinen Lebenssinn?",
+      "answer": "b",
+      "follow_up_answer": "b",
+      "metadata": {
+        "id": "SD7",
+        "spiral_levels": [
+          "Grün",
+          "Gelb",
+          "Türkis"
+        ],
+        "meaning_source": "Sinnquelle",
+        "purpose_orientation": "Zweckausrichtung"
+      },
+      "timestamp": 66519.941852125
+    },
+    {
+      "question_id": "SD8",
+      "question_text": "Wie lernst du am besten?",
+      "answer": "d",
+      "follow_up_answer": "d",
+      "metadata": {
+        "id": "SD8",
+        "spiral_levels": [
+          "Orange",
+          "Grün",
+          "Gelb",
+          "Türkis"
+        ],
+        "learning_style": "Lernpräferenz",
+        "growth_motivation": "Wachstumsantrieb"
+      },
+      "timestamp": 66539.854283708
+    },
+    {
+      "question_id": "SD9",
+      "question_text": "Deine Haltung zu technologischem Fortschritt:",
+      "answer": "c",
+      "follow_up_answer": "c",
+      "metadata": {
+        "id": "SD9",
+        "spiral_levels": [
+          "Orange",
+          "Grün",
+          "Gelb",
+          "Türkis"
+        ],
+        "tech_attitude": "Technologie-Haltung",
+        "progress_view": "Fortschrittsverständnis"
+      },
+      "timestamp": 66559.130601708
+    },
+    {
+      "question_id": "SD10",
+      "question_text": "Was tust du immer wieder, obwohl du weißt, dass es dir nicht gut tut?",
+      "answer": "a",
+      "follow_up_answer": "a",
+      "metadata": {
+        "id": "SD10",
+        "spiral_levels": [
+          "alle"
+        ],
+        "pattern_recognition": "Mustererkennung",
+        "self_awareness": "Selbstreflexion"
+      },
+      "timestamp": 66582.051000708
+    },
+    {
+      "question_id": "SD11",
+      "question_text": "Kannst du verschiedene 'Versionen' von dir selbst in unterschiedlichen Situationen erkennen?",
+      "answer": "ja",
+      "follow_up_answer": "ja",
+      "metadata": {
+        "id": "SD11",
+        "spiral_levels": [
+          "Gelb",
+          "Türkis"
+        ],
+        "meta_cognition": "Metakognition",
+        "level_integration": "Ebenenintegration"
+      },
+      "timestamp": 66606.497271833
+    }
+  ]
+}

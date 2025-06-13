@@ -1,0 +1,8 @@
+{
+  "model": "gpt-4-turbo-preview",
+  "temperature": 0.7,
+  "max_tokens": 4000,
+  "assistant_name_prefix": "Archetypen-GPT",
+  "assistant_description": "Personalisierter Archetypen-GPT basierend auf psychodynamischer Analyse",
+  "embedding_model": "text-embedding-3-small"
+}

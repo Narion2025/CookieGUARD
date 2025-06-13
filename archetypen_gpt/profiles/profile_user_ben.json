@@ -1,0 +1,69 @@
+{
+  "username": "ben",
+  "archetypes": [
+    {
+      "name": "Held",
+      "light": "Mut & Verantwortung",
+      "shadow": "Größenwahn & Burnout",
+      "score": 0.8,
+      "evidence": [
+        "Antwort-Cluster: 4 Treffer"
+      ]
+    },
+    {
+      "name": "Unschuldiger",
+      "light": "Reinheit & Optimismus",
+      "shadow": "Naivität & Verdrängung",
+      "score": 0.8,
+      "evidence": [
+        "Antwort-Cluster: 2 Treffer"
+      ]
+    },
+    {
+      "name": "Herrscher",
+      "light": "Führung & Ordnung",
+      "shadow": "Tyrannei & Kontrollzwang",
+      "score": 0.8,
+      "evidence": [
+        "Antwort-Cluster: 3 Treffer"
+      ]
+    }
+  ],
+  "spiral_dynamics": {
+    "primary": "Grün",
+    "secondary": "Orange",
+    "resistance": "Orange",
+    "integration": "Gelb",
+    "tensions": [
+      "Ordnung vs. Individualität vs. Harmonie",
+      "Impuls vs. Kontrolle vs. Strategie",
+      "Wettbewerb vs. Kooperation vs. Integration"
+    ]
+  },
+  "shadow": {
+    "pattern": "Vermeidung",
+    "triggers": [
+      "Konflikt",
+      "Konfrontation",
+      "Wahrheit"
+    ],
+    "compensation": [
+      "Perfektionismus, Rückzug, Größenfantasien",
+      "Überplanung, Kontrolle, Vermeidung"
+    ],
+    "integration": "Niedrig - Wenig Bewusstsein"
+  },
+  "markers": [
+    "Verantwortung",
+    "Macht",
+    "Mut",
+    "Angst",
+    "Kontrolle"
+  ],
+  "tensions": [
+    "Held vs. Unschuldiger",
+    "Grün → Gelb",
+    "Schatten: Vermeidung"
+  ],
+  "integration_theme": "Macht & Verantwortung integrieren"
+}
