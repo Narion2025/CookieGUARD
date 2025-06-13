@@ -541,37 +541,137 @@ function showLoading(show) {
 }
 
 function downloadFile(fileType) {
-    if (!currentState.analysis) return;
+    if (!currentState.analysis) {
+        alert('🔥 Keine Analyse verfügbar! Bitte führe zuerst die Archetypen-Analyse durch.');
+        return;
+    }
     
     let content = '';
     let filename = '';
+    let mimeType = 'text/plain';
     
     switch (fileType) {
         case 'gpt-prompt':
             content = generateGPTPrompt(currentState.analysis);
-            filename = `archetypen-gpt-${currentState.userName.toLowerCase()}.txt`;
+            filename = `🎭-archetypen-gpt-prompt-${currentState.userName.toLowerCase()}.txt`;
             break;
         case 'analysis':
             content = generateDetailedAnalysis(currentState.analysis);
-            filename = `archetypen-analyse-${currentState.userName.toLowerCase()}.txt`;
+            filename = `📊-archetypen-analyse-${currentState.userName.toLowerCase()}.txt`;
             break;
         case 'image-prompt':
             content = generateImagePrompt(currentState.analysis);
-            filename = `bild-prompt-${currentState.userName.toLowerCase()}.txt`;
+            filename = `🎨-bild-prompt-${currentState.userName.toLowerCase()}.txt`;
             break;
         case 'config':
             content = generateChatGPTConfig(currentState.analysis);
-            filename = `chatgpt-config-${currentState.userName.toLowerCase()}.txt`;
+            filename = `⚙️-chatgpt-config-${currentState.userName.toLowerCase()}.txt`;
             break;
     }
     
-    const blob = new Blob([content], { type: 'text/plain' });
+    const blob = new Blob([content], { type: mimeType });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
     a.download = filename;
     a.click();
     URL.revokeObjectURL(url);
+    
+    // Erfolgs-Modal mit Video anzeigen
+    showDownloadSuccess(fileType, filename);
+}
+
+function showDownloadSuccess(fileType, filename) {
+    const messages = {
+        'gpt-prompt': '🎯 System-Prompt heruntergeladen! Verwende ihn für deinen personalisierten GPT.',
+        'analysis': '📊 Detaillierte Analyse heruntergeladen! Deine Archetypen-Persönlichkeit im Detail.',
+        'image-prompt': '🎨 Bild-Prompt heruntergeladen! Erstelle dein Avatar mit DALL-E oder Midjourney.',
+        'config': '⚙️ ChatGPT-Konfiguration heruntergeladen! Für deinen Custom GPT.'
+    };
+    
+    // Erfolgs-Modal mit Video anzeigen
+    const modal = document.createElement('div');
+    modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        z-index: 20000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.3s ease;
+    `;
+    
+    const content = document.createElement('div');
+    content.style.cssText = `
+        background: rgba(26,15,10,0.95);
+        border: 3px solid #ff8c00;
+        border-radius: 15px;
+        padding: 30px;
+        max-width: 500px;
+        text-align: center;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        box-shadow: 0 0 50px rgba(255,140,0,0.8);
+    `;
+    
+    content.innerHTML = `
+        <div style="margin-bottom: 20px;">
+            <video autoplay muted loop style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #ff8c00;">
+                <source src="SChmiedAmFeuer.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h3 style="color: #ff8c00; margin: 0 0 15px 0; font-size: 20px;">🔥 Datei geschmiedet!</h3>
+        <div style="font-size: 16px; margin-bottom: 10px;">${messages[fileType]}</div>
+        <div style="font-size: 14px; opacity: 0.8; margin-bottom: 20px;">📁 ${filename}</div>
+        
+        <div style="background: rgba(255,140,0,0.1); padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff8c00;">
+            <div style="font-size: 14px; font-weight: 500; margin-bottom: 8px;">🎙️ Transkript für Voice-Agent:</div>
+            <div style="font-size: 12px; opacity: 0.9; font-family: monospace; background: rgba(0,0,0,0.3); padding: 8px; border-radius: 4px; text-align: left; max-height: 100px; overflow-y: auto;">
+                ${generateTranscriptOutput(fileType, currentState.analysis)}
+            </div>
+        </div>
+        
+        <button onclick="this.parentElement.parentElement.remove()" style="
+            background: #ff8c00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+        ">✨ Verstanden</button>
+    `;
+    
+    modal.appendChild(content);
+    document.body.appendChild(modal);
+    
+    // Auto-close nach 12 Sekunden
+    setTimeout(() => {
+        if (modal.parentNode) {
+            modal.style.animation = 'fadeOut 0.3s ease';
+            setTimeout(() => {
+                if (modal.parentNode) {
+                    modal.parentNode.removeChild(modal);
+                }
+            }, 300);
+        }
+    }, 12000);
+}
+
+function generateTranscriptOutput(fileType, analysis) {
+    const outputs = {
+        'gpt-prompt': `SYSTEM_PROMPT_${analysis.userName.toUpperCase()}:\n\nDu bist ein Archetypen-GPT für ${analysis.userName}.\nArchetypen: ${analysis.topArchetypes.map(a => a.name).join(', ')}\nSpiral Level: ${analysis.spiralLevel}\n\n[Vollständiger Prompt in der heruntergeladenen Datei]`,
+        'analysis': `ARCHETYPEN_ANALYSE_${analysis.userName.toUpperCase()}:\n\nTop 3 Archetypen:\n${analysis.topArchetypes.map((a, i) => `${i+1}. ${a.name} (${a.score}/15)`).join('\n')}\n\nSpiral Dynamics: ${analysis.spiralLevel}\nSchatten: ${analysis.shadowPattern}`,
+        'image-prompt': `IMAGE_PROMPT_${analysis.userName.toUpperCase()}:\n\nHauptarchetyp: ${analysis.topArchetypes[0].name}\nStil: Digitale Kunst, Porträt\nBewusstseinsstufe: ${analysis.spiralLevel}\n\n[Detaillierter Prompt in der Datei]`,
+        'config': `CONFIG_${analysis.userName.toUpperCase()}:\n\nName: "Archetypen-GPT für ${analysis.userName}"\nArchetypen: [${analysis.topArchetypes.map(a => `"${a.name}"`).join(', ')}]\nKategorie: "Lifestyle"\n\n[Vollständige Konfiguration in der Datei]`
+    };
+    
+    return outputs[fileType] || 'Datei-Output generiert';
 }
 
 function generateGPTPrompt(analysis) {
