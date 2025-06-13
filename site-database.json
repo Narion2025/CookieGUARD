@@ -1,0 +1,3223 @@
+{
+  "version": "1.1.0",
+  "generatedAt": "2025-06-13T10:12:06.718Z",
+  "totalSites": 33,
+  "lastCrawlerUpdate": "2025-06-13T10:12:06.719Z",
+  "sites": {
+    "google.com": {
+      "rating": "yellow",
+      "cookieCount": 3,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 3
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[aria-label*=\"Cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 9,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": true,
+            "hasStorageInfo": true
+          },
+          "violations": []
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T08:59:34.426Z"
+    },
+    "facebook.com": {
+      "rating": "yellow",
+      "cookieCount": 2,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 2
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": false,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasThirdParty",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T08:59:39.344Z"
+    },
+    "amazon.de": {
+      "rating": "yellow",
+      "cookieCount": 8,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 3,
+        "functional": 5
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T08:59:47.592Z"
+    },
+    "otto.de": {
+      "rating": "yellow",
+      "cookieCount": 8,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 8
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "#onetrust-consent-sdk"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 17,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:01:29.373Z"
+    },
+    "idealo.de": {
+      "rating": "red",
+      "cookieCount": 5,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 4
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "#usercentrics-cmp"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 6,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanSettings",
+            "hasGermanButtons",
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:01:34.921Z"
+    },
+    "mediamarkt.de": {
+      "rating": "red",
+      "cookieCount": 1,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 1
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": false,
+            "hasReject": false,
+            "hasSettings": false,
+            "hasInfo": true,
+            "hasPurpose": false,
+            "hasDuration": false,
+            "hasThirdParty": false,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasConsent",
+            "hasReject",
+            "hasSettings",
+            "hasPurpose",
+            "hasDuration",
+            "hasThirdParty",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": false,
+            "hasOptOut": false,
+            "hasStorageInfo": false
+          },
+          "violations": [
+            "hasTrackingInfo",
+            "hasOptOut",
+            "hasStorageInfo"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanSettings",
+            "hasGermanButtons",
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:00:05.480Z"
+    },
+    "notebooksbilliger.de": {
+      "rating": "red",
+      "cookieCount": 4,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 4
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": false,
+            "hasReject": false,
+            "hasSettings": false,
+            "hasInfo": false,
+            "hasPurpose": false,
+            "hasDuration": false,
+            "hasThirdParty": false,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasConsent",
+            "hasReject",
+            "hasSettings",
+            "hasInfo",
+            "hasPurpose",
+            "hasDuration",
+            "hasThirdParty",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": false,
+            "hasTrackingInfo": false,
+            "hasOptOut": false,
+            "hasStorageInfo": false
+          },
+          "violations": [
+            "hasCookieInfo",
+            "hasTrackingInfo",
+            "hasOptOut",
+            "hasStorageInfo"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": false,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanInfo",
+            "hasGermanSettings",
+            "hasGermanButtons",
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:00:39.446Z"
+    },
+    "cyberport.de": {
+      "rating": "yellow",
+      "cookieCount": 4,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 4
+      },
+      "banner": {
+        "buttons": 1,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": true,
+        "selectors": {
+          "container": [
+            "[id*=\"cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [
+            "#consent-settings"
+          ],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": [
+              {
+                "selector": "#consent-settings",
+                "action": "click"
+              }
+            ]
+          },
+          "timing": {
+            "clickDelay": 32,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:00:44.247Z"
+    },
+    "alternate.de": {
+      "rating": "yellow",
+      "cookieCount": 3,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 2
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "#usercentrics-cmp"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 39,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": false,
+            "hasDuration": false,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasPurpose",
+            "hasDuration",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:00:49.096Z"
+    },
+    "zalando.de": {
+      "rating": "red",
+      "cookieCount": 12,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 12
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "#usercentrics-cmp"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 17,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": false,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "hasPurpose",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": false,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasCookieInfo",
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:00:55.870Z"
+    },
+    "aboutyou.de": {
+      "rating": "yellow",
+      "cookieCount": 1,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 1
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "#usercentrics-cmp"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 9,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:01:01.725Z"
+    },
+    "hm.com": {
+      "rating": "yellow",
+      "cookieCount": 24,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 23
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[id*=\"cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [
+              {
+                "selector": ".necessary-text",
+                "action": "click"
+              }
+            ],
+            "settings": [
+              {
+                "selector": ".settings-page.",
+                "action": "click"
+              }
+            ]
+          },
+          "timing": {
+            "clickDelay": 56,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": false,
+            "hasThirdParty": false,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "hasDuration",
+            "hasThirdParty",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:01:08.742Z"
+    },
+    "asos.com": {
+      "rating": "yellow",
+      "cookieCount": 26,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 2,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 23
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "#onetrust-consent-sdk"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [
+              {
+                "selector": "#onetrust-button-group-parent",
+                "action": "click"
+              }
+            ],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 32,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": true,
+            "hasStorageInfo": true
+          },
+          "violations": []
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:01:23.301Z"
+    },
+    "geizhals.de": {
+      "rating": "yellow",
+      "cookieCount": 12,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 1,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 10
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "#onetrust-consent-sdk"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [
+              {
+                "selector": "#onetrust-button-group-parent",
+                "action": "click"
+              }
+            ],
+            "essential": [],
+            "settings": [
+              {
+                "selector": ".secondary-nav-item.settings-link",
+                "action": "click"
+              }
+            ]
+          },
+          "timing": {
+            "clickDelay": 9,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": true,
+            "hasStorageInfo": true
+          },
+          "violations": []
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:01:39.884Z"
+    },
+    "billiger.de": {
+      "rating": "yellow",
+      "cookieCount": 2,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 1
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[class*=\"cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 5,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:01:44.838Z"
+    },
+    "preis.de": {
+      "rating": "red",
+      "cookieCount": 0,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 0
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": false,
+            "hasReject": false,
+            "hasSettings": false,
+            "hasInfo": true,
+            "hasPurpose": false,
+            "hasDuration": false,
+            "hasThirdParty": false,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasConsent",
+            "hasReject",
+            "hasSettings",
+            "hasPurpose",
+            "hasDuration",
+            "hasThirdParty",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": false,
+            "hasTrackingInfo": false,
+            "hasOptOut": false,
+            "hasStorageInfo": false
+          },
+          "violations": [
+            "hasCookieInfo",
+            "hasTrackingInfo",
+            "hasOptOut",
+            "hasStorageInfo"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": true
+          },
+          "violations": [
+            "hasGermanSettings",
+            "hasGermanButtons"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:01:48.898Z"
+    },
+    "vergleich.org": {
+      "rating": "yellow",
+      "cookieCount": 3,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 2
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:01:54.395Z"
+    },
+    "check24.de": {
+      "rating": "yellow",
+      "cookieCount": 15,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 15
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[id*=\"cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 10,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": true,
+            "hasStorageInfo": true
+          },
+          "violations": []
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:00.346Z"
+    },
+    "verivox.de": {
+      "rating": "green",
+      "cookieCount": 17,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 16
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[id*=\"consent\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [
+              {
+                "selector": "#uc-btn-accept-banner",
+                "action": "click"
+              }
+            ],
+            "reject": [
+              {
+                "selector": ".gdpr-link.gdpr-deny-all",
+                "action": "click"
+              }
+            ],
+            "essential": [],
+            "settings": [
+              {
+                "selector": ".settings-headline",
+                "action": "click"
+              }
+            ]
+          },
+          "timing": {
+            "clickDelay": 9,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": true,
+            "hasStorageInfo": true
+          },
+          "violations": []
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:05.708Z"
+    },
+    "toptarif.de": {
+      "rating": "red",
+      "cookieCount": 0,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 0
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": false,
+            "hasReject": false,
+            "hasSettings": false,
+            "hasInfo": false,
+            "hasPurpose": false,
+            "hasDuration": false,
+            "hasThirdParty": false,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasConsent",
+            "hasReject",
+            "hasSettings",
+            "hasInfo",
+            "hasPurpose",
+            "hasDuration",
+            "hasThirdParty",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": false,
+            "hasTrackingInfo": false,
+            "hasOptOut": false,
+            "hasStorageInfo": false
+          },
+          "violations": [
+            "hasCookieInfo",
+            "hasTrackingInfo",
+            "hasOptOut",
+            "hasStorageInfo"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": false,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanInfo",
+            "hasGermanSettings",
+            "hasGermanButtons",
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:09.671Z"
+    },
+    "telekom.de": {
+      "rating": "red",
+      "cookieCount": 8,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 2,
+        "functional": 6
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": false,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "hasPurpose",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": false
+          },
+          "violations": [
+            "hasOptOut",
+            "hasStorageInfo"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:14.515Z"
+    },
+    "vodafone.de": {
+      "rating": "yellow",
+      "cookieCount": 8,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 8
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[id*=\"consent\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 7,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": false,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasDuration",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": true,
+            "hasStorageInfo": true
+          },
+          "violations": []
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:20.034Z"
+    },
+    "o2online.de": {
+      "rating": "red",
+      "cookieCount": 9,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 2,
+        "functional": 7
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "#usercentrics-cmp"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 28,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": false,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": false,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasConsent",
+            "hasReject",
+            "hasPurpose",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": false
+          },
+          "violations": [
+            "hasOptOut",
+            "hasStorageInfo"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:25.630Z"
+    },
+    "1und1.de": {
+      "rating": "yellow",
+      "cookieCount": 9,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 2,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 6
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[id*=\"cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 405,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": true,
+            "hasStorageInfo": true
+          },
+          "violations": []
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:31.206Z"
+    },
+    "tele2.de": {
+      "rating": "yellow",
+      "cookieCount": 8,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 8
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[id*=\"cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [
+              {
+                "selector": "._brlbs-accept",
+                "action": "click"
+              }
+            ],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 25,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:37.166Z"
+    },
+    "vergleich.de": {
+      "rating": "red",
+      "cookieCount": 0,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 0
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "#Cookiebot"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 9,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": false,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": false,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "hasSettings",
+            "hasThirdParty",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": false
+          },
+          "violations": [
+            "hasOptOut",
+            "hasStorageInfo"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanSettings",
+            "hasGermanButtons",
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:45.735Z"
+    },
+    "pornhub.com": {
+      "rating": "red",
+      "cookieCount": 6,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 6
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[id*=\"cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [],
+            "reject": [],
+            "essential": [],
+            "settings": [
+              {
+                "selector": ".ph-icon-admin-panel-settings",
+                "action": "click"
+              }
+            ]
+          },
+          "timing": {
+            "clickDelay": 3,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": false,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasPurpose",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanSettings",
+            "hasGermanButtons",
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:50.366Z"
+    },
+    "xvideos.com": {
+      "rating": "red",
+      "cookieCount": 1,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 0
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": false,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": false,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasConsent",
+            "hasThirdParty",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": false,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasTrackingInfo",
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:02:55.510Z"
+    },
+    "xnxx.com": {
+      "rating": "red",
+      "cookieCount": 1,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 1,
+        "functional": 0
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": false,
+            "hasReject": true,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": false,
+            "hasThirdParty": false,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasConsent",
+            "hasDuration",
+            "hasThirdParty",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": false,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasTrackingInfo",
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": true,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": []
+        }
+      },
+      "lastUpdated": "2025-06-13T09:03:00.796Z"
+    },
+    "redtube.com": {
+      "rating": "red",
+      "cookieCount": 6,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 6
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[id*=\"cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [
+              {
+                "selector": "#consent_accept_min_all",
+                "action": "click"
+              }
+            ],
+            "reject": [],
+            "essential": [
+              {
+                "selector": ".necessary_functional_section",
+                "action": "click"
+              }
+            ],
+            "settings": []
+          },
+          "timing": {
+            "clickDelay": 4,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": false,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "hasPurpose",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanSettings",
+            "hasGermanButtons",
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:03:06.640Z"
+    },
+    "youporn.com": {
+      "rating": "red",
+      "cookieCount": 3,
+      "hasBanner": true,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 3
+      },
+      "banner": {
+        "buttons": 0,
+        "hasAccept": false,
+        "hasReject": false,
+        "hasSettings": false,
+        "selectors": {
+          "container": [
+            "[id*=\"cookie\"]"
+          ],
+          "accept": [],
+          "reject": [],
+          "settings": [],
+          "close": []
+        },
+        "automation": {
+          "sequences": {
+            "accept": [
+              {
+                "selector": "#consent_accept_min_all",
+                "action": "click"
+              }
+            ],
+            "reject": [],
+            "essential": [],
+            "settings": [
+              {
+                "selector": ".icon.icon-console-settings-language-icon",
+                "action": "click"
+              }
+            ]
+          },
+          "timing": {
+            "clickDelay": 4,
+            "animationDelay": 300,
+            "loadDelay": 1000
+          },
+          "errorHandling": {
+            "retryCount": 3,
+            "retryDelay": 1000,
+            "fallbackActions": {
+              "accept": "reject",
+              "reject": "settings",
+              "settings": "close"
+            }
+          }
+        }
+      },
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": false,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "hasPurpose",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanSettings",
+            "hasGermanButtons",
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:03:11.241Z"
+    },
+    "xhamster.com": {
+      "rating": "yellow",
+      "cookieCount": 4,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 4
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": false,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": true,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasConsent",
+            "hasReject",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": false,
+            "hasGermanButtons": true,
+            "hasGermanPrivacy": true
+          },
+          "violations": [
+            "hasGermanSettings"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T09:03:18.555Z"
+    },
+    "t-online.de": {
+      "rating": "red",
+      "cookieCount": 4,
+      "hasBanner": false,
+      "stats": {
+        "tracking": 0,
+        "analytics": 0,
+        "essential": 0,
+        "functional": 4
+      },
+      "banner": null,
+      "compliance": {
+        "gdpr": {
+          "required": true,
+          "checks": {
+            "hasConsent": true,
+            "hasReject": false,
+            "hasSettings": true,
+            "hasInfo": true,
+            "hasPurpose": true,
+            "hasDuration": true,
+            "hasThirdParty": true,
+            "hasWithdraw": false,
+            "isVisible": false,
+            "isAccessible": false,
+            "hasContrast": false,
+            "hasReadableFont": false,
+            "noPreTicked": false,
+            "noForcedAccept": false,
+            "hasSaveButton": false,
+            "hasCloseButton": false
+          },
+          "violations": [
+            "hasReject",
+            "hasWithdraw",
+            "isVisible",
+            "isAccessible",
+            "hasContrast",
+            "hasReadableFont",
+            "noPreTicked",
+            "noForcedAccept",
+            "hasSaveButton",
+            "hasCloseButton"
+          ]
+        },
+        "eprivacy": {
+          "required": true,
+          "checks": {
+            "hasCookieInfo": true,
+            "hasTrackingInfo": true,
+            "hasOptOut": false,
+            "hasStorageInfo": true
+          },
+          "violations": [
+            "hasOptOut"
+          ]
+        },
+        "ttdsg": {
+          "required": true,
+          "checks": {
+            "hasGermanInfo": true,
+            "hasGermanSettings": false,
+            "hasGermanButtons": false,
+            "hasGermanPrivacy": false
+          },
+          "violations": [
+            "hasGermanSettings",
+            "hasGermanButtons",
+            "hasGermanPrivacy"
+          ]
+        }
+      },
+      "lastUpdated": "2025-06-13T10:02:43.824Z"
+    }
+  }
+}

@@ -1,0 +1,335 @@
+/* Cookie Guardian Overlay Styles - Enhanced with Crawl Data */
+.cookie-guardian-overlay {
+  position: fixed !important;
+  top: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+  max-width: 95vw !important;
+  height: auto !important;
+  background: transparent !important;
+  z-index: 2147483647 !important;
+  display: block !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  pointer-events: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.guardian-popup {
+  background: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+  max-width: 450px !important;
+  width: 100% !important;
+  max-height: 80vh !important;
+  overflow-y: auto !important;
+  position: relative !important;
+  animation: guardianSlideIn 0.3s ease-out !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  z-index: 2147483647 !important;
+}
+
+@keyframes guardianSlideIn {
+  from {
+    transform: translateY(-20px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.guardian-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guardian-logo {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.guardian-risk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.risk-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.risk-indicator.red {
+  background: #f44336;
+  box-shadow: 0 0 8px rgba(244, 67, 54, 0.4);
+}
+
+.risk-indicator.yellow {
+  background: #ff9800;
+  box-shadow: 0 0 8px rgba(255, 152, 0, 0.4);
+}
+
+.risk-indicator.green {
+  background: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+.guardian-content {
+  padding: 24px;
+}
+
+.guardian-content h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.risk-explanation {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 24px 0;
+}
+
+.guardian-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.guardian-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.guardian-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.guardian-btn.block {
+  background: #ffebee;
+  color: #c62828;
+  border: 2px solid #ef9a9a;
+}
+
+.guardian-btn.block:hover {
+  background: #ffcdd2;
+  border-color: #e57373;
+}
+
+.guardian-btn.essential {
+  background: #fff8e1;
+  color: #f57f17;
+  border: 2px solid #ffcc02;
+}
+
+.guardian-btn.essential:hover {
+  background: #ffecb3;
+  border-color: #ffb300;
+}
+
+.guardian-btn.accept {
+  background: #e8f5e8;
+  color: #2e7d32;
+  border: 2px solid #81c784;
+}
+
+.guardian-btn.accept:hover {
+  background: #c8e6c9;
+  border-color: #66bb6a;
+}
+
+.guardian-btn small {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
+.guardian-footer {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.guardian-footer small {
+  color: #888;
+  font-size: 12px;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .guardian-popup {
+    margin: 20px;
+    max-width: none;
+    width: calc(100% - 40px);
+  }
+  
+  .guardian-header {
+    padding: 16px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .guardian-content {
+    padding: 20px;
+  }
+  
+  .guardian-btn {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .guardian-popup {
+    background: #1e1e2e;
+    color: #cdd6f4;
+  }
+  
+  .guardian-content h3 {
+    color: #cdd6f4;
+  }
+  
+  .risk-explanation {
+    color: #a6adc8;
+  }
+  
+  .guardian-footer {
+    border-top-color: #313244;
+  }
+  
+  .guardian-footer small {
+    color: #6c7086;
+  }
+}
+
+/* 🎯 ENHANCED: Crawl Data Styles */
+.crawl-info {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.crawl-info h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.cookie-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.cookie-type {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cookie-type.danger {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.cookie-type.warning {
+  background: #fff8e1;
+  color: #f57f17;
+  border: 1px solid #ffccbc;
+}
+
+.cookie-type.safe {
+  background: #e8f5e8;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.banner-info {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e9ecef;
+}
+
+.banner-info small {
+  color: #6c757d;
+  font-size: 11px;
+}
+
+/* Dark mode for crawl data */
+@media (prefers-color-scheme: dark) {
+  .crawl-info {
+    background: #262636;
+    border-color: #45475a;
+  }
+  
+  .crawl-info h4 {
+    color: #cdd6f4;
+  }
+  
+  .cookie-type.danger {
+    background: rgba(243, 139, 168, 0.2);
+    color: #f38ba8;
+    border-color: rgba(243, 139, 168, 0.3);
+  }
+  
+  .cookie-type.warning {
+    background: rgba(249, 226, 175, 0.2);
+    color: #f9e2af;
+    border-color: rgba(249, 226, 175, 0.3);
+  }
+  
+  .cookie-type.safe {
+    background: rgba(166, 227, 161, 0.2);
+    color: #a6e3a1;
+    border-color: rgba(166, 227, 161, 0.3);
+  }
+  
+  .banner-info {
+    border-top-color: #45475a;
+  }
+  
+  .banner-info small {
+    color: #a6adc8;
+  }
+}
