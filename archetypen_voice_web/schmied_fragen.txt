@@ -1,0 +1,96 @@
+# DIE 44 FRAGEN DES ARCHETYPEN-SCHMIEDS
+## Mystisch transformierte Fragen für ElevenLabs Voice Agent
+
+### UNSCHULDIGER (Der reine Stahl)
+1. "Siehst du in jedem Metall das Gold, das geschmiedet werden will?"
+2. "Vertraust du darauf, dass das Feuer selbst die Lösung bringt?"
+3. "Suchst du stets den einfachsten Weg durch die Glut?"
+
+### ENTDECKER (Der wandernde Schmied)
+4. "Erdrücken dich zu viele Regeln wie schwere Ketten?"
+5. "Ruft dich die Weite jenseits der bekannten Schmiede?"
+6. "Ist dir Freiheit kostbarer als die sicherste Esse?"
+
+### WEISE (Der Meister der alten Künste)
+7. "Sammelst du die alten Formeln wie kostbare Erze?"
+8. "Kommen Suchende zu dir, wenn ihre Seele Rat braucht?"
+9. "Prüfst du jedes Metall, bevor du es ins Feuer legst?"
+
+### HELD (Der Schwertschmied)
+10. "Greifst du zum Hammer, wenn andere zögern?"
+11. "Kämpfst du für das, was dein Herz als wahr erkennt?"
+12. "Entfachen Hindernisse das Feuer in deiner Brust?"
+
+### REBELL (Der Zerbrecher der Formen)
+13. "Zerbrichst du gerne die alten, rostigen Formen?"
+14. "Brichst du Regeln, wenn sie das Metall schwächen?"
+15. "Kämpfst du gegen die Ketten der Unterdrückung?"
+
+### MAGIER (Der Alchemist des Feuers)
+16. "Glaubst du, dass jedes Metall zu Gold werden kann?"
+17. "Kannst du andere Seelen zum Leuchten bringen?"
+18. "Siehst du Verbindungen, die anderen verborgen bleiben?"
+
+### JEDERMANN (Der Dorfschmied)
+19. "Fühlst du dich wohl im Kreis der anderen Schmiede?"
+20. "Sind deine Füße fest auf dem Boden der Werkstatt?"
+21. "Hilfst du gerne anderen beim Formen ihrer Träume?"
+
+### LIEBENDER (Der Schmied der Herzen)
+22. "Sind Verbindungen das wertvollste Metall für dich?"
+23. "Spürst du jede Schwingung im Herzen anderer?"
+24. "Suchst du nach Seelen, die mit deiner verschmelzen?"
+
+### NARR (Der lachende Funke)
+25. "Bringst du gerne Funken des Lachens in dunkle Ecken?"
+26. "Nimmst du das Leben leicht wie tanzende Flammen?"
+27. "Hilft dir Humor, wenn das Feuer zu heiß wird?"
+
+### BETREUER (Der Heiler der Risse)
+28. "Kümmerst du dich gerne um zerbrochene Seelen?"
+29. "Sind die Bedürfnisse anderer wichtiger als dein eigenes Metall?"
+30. "Erfüllt es dich, wenn du Risse heilen kannst?"
+
+### HERRSCHER (Der Meister der Esse)
+31. "Führst du gerne die Flammen und formst die Ordnung?"
+32. "Schaffst du gerne Struktur aus dem Chaos der Glut?"
+33. "Siehst du klar, wie die perfekte Form aussehen soll?"
+
+### SCHÖPFER (Der Erschaffer neuer Formen)
+34. "Erschaffst du gerne Formen, die noch nie existierten?"
+35. "Tanzen lebendige Bilder in deinem inneren Feuer?"
+36. "Drückst du deine Seele durch das geschmiedete Werk aus?"
+
+### SPIRAL DYNAMICS (Die Bewusstseins-Ebenen)
+37. "Was wiegt schwerer: Sicherheit oder das Unbekannte?"
+38. "Ehrst du die alten Wege oder schmiedest du neue?"
+39. "Beugst du dich vor Autorität oder stellst du sie in Frage?"
+40. "Was entfacht dein Feuer: Erfolg oder Harmonie?"
+41. "Wie wichtig ist dir die Verbindung zum Göttlichen?"
+42. "Folgst du dem Plan oder dem Gefühl der Flammen?"
+43. "Denkst du in weiten Kreisen oder schmiedest du lokal?"
+44. "Was ist kostbarer: deine Einzigartigkeit oder die Gemeinschaft?"
+
+---
+
+### BESTÄTIGUNGS-PHRASEN (zwischen den Fragen):
+- "Das Feuer brennt heller..."
+- "Ein weiterer Funke der Wahrheit..."
+- "Die Form nimmt Gestalt an..."
+- "Das Metall wird geschmeidiger..."
+- "Die Glut spricht zu mir..."
+- "Ein neuer Hammerschlag..."
+- "Die Seele öffnet sich..."
+- "Das Geheimnis lichtet sich..."
+- "Die Essenz wird sichtbar..."
+- "Ein weiteres Geheimnis enthüllt..."
+
+### FINALE ENTHÜLLUNG:
+"Das Werk ist vollendet. Drei Formen haben sich aus dem Feuer erhoben: [Archetyp 1 - Schmied-Name], [Archetyp 2 - Schmied-Name], [Archetyp 3 - Schmied-Name]. Deine Seele trägt nun ihre wahre Gestalt. Das Feuer hat gesprochen."
+
+### ANWEISUNGEN FÜR ELEVENLABS:
+1. **Stimme**: Tiefe, mystische deutsche Stimme (männlich empfohlen)
+2. **Tempo**: Langsam und bedächtig
+3. **Pausen**: Nach jeder Frage 2-3 Sekunden Stille
+4. **Betonung**: Schlüsselwörter wie "Feuer", "Metall", "Seele" betonen
+5. **Atmosphäre**: Geheimnisvoll, weise, kraftvoll 

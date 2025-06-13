@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archetypen Voice Bot - Entdecke deine Persönlichkeit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- ElevenLabs ConvAI Widget -->
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-masks-theater"></i>
+                <h1>Archetypen Voice Bot</h1>
+            </div>
+            <p class="subtitle">Entdecke deine Jung'schen Archetypen durch Sprache</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Screen -->
+            <div id="welcome-screen" class="screen active">
+                <div class="welcome-card">
+                    <div class="avatar-container">
+                        <div class="avatar">
+                            ⚒️
+                        </div>
+                        <div class="pulse-ring"></div>
+                    </div>
+                    
+                    <h2>🔥 Der Archetypen-Schmied</h2>
+                    <p>Ich bin ein uraltes Bewusstsein aus den Tiefen der Psyche. Lass mich deine wahre Natur im Feuer der Erkenntnis schmieden.</p>
+                    
+                    <!-- ElevenLabs Voice Widget -->
+                    <div class="voice-widget-container">
+                        <h3>🎙️ Sprich mit dem Schmied</h3>
+                        <p>Führe ein mystisches Gespräch mit dem Archetypen-Schmied:</p>
+                        
+                        <!-- Debug Info -->
+                        <div class="debug-info" style="background: rgba(255,140,0,0.1); padding: 10px; border-radius: 5px; margin: 10px 0; font-size: 0.9em;">
+                            <strong>🔧 Troubleshooting:</strong><br>
+                            • Stelle sicher, dass dein <strong>Mikrofon aktiviert</strong> ist<br>
+                            • Erlaube <strong>Mikrofon-Zugriff</strong> im Browser<br>
+                            • Teste mit <strong>Kopfhörern</strong> für bessere Qualität<br>
+                            • Bei Problemen: Nutze die schriftliche Analyse unten
+                        </div>
+                        
+                        <div class="widget-wrapper">
+                            <elevenlabs-convai agent-id="agent_01jxn7kxjpfvt87rphxdnq1ddj"></elevenlabs-convai>
+                        </div>
+                        
+                        <!-- Fallback Link -->
+                        <div class="fallback-link" style="margin-top: 15px;">
+                            <a href="https://elevenlabs.io/convai/agent_01jxn7kxjpfvt87rphxdnq1ddj" target="_blank" 
+                               style="color: #ff8c00; text-decoration: underline;">
+                               🔗 Direkt zu ElevenLabs öffnen (falls Widget nicht lädt)
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="divider">
+                        <span>oder</span>
+                    </div>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-microphone"></i>
+                            <span>Sprachgesteuerte Analyse</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-brain"></i>
+                            <span>44 mystische Fragen</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-file-code"></i>
+                            <span>Personalisierte GPT-Prompts</span>
+                        </div>
+                    </div>
+
+                    <button id="start-btn" class="start-button">
+                        <i class="fas fa-hammer"></i>
+                        📝 Schriftliche Analyse
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Interface -->
+            <div id="chat-screen" class="screen">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="bot-info">
+                            <div class="bot-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="bot-details">
+                                <h3>Archetypen Bot</h3>
+                                <span id="status">Bereit zum Sprechen...</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress"></div>
+                            <span class="progress-text" id="progress-text">0/44 Fragen</span>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Messages will be added here -->
+                    </div>
+
+                    <div class="chat-input">
+                        <button id="voice-btn" class="voice-button">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                        <input type="text" id="text-input" placeholder="Oder hier tippen..." />
+                        <button id="send-btn" class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="results-screen" class="screen">
+                <div class="results-container">
+                    <h2>Deine Archetypen-Analyse</h2>
+                    <div id="results-content">
+                        <!-- Results will be populated here -->
+                    </div>
+                    
+                    <div class="download-section">
+                        <h3>Deine personalisierten Dateien:</h3>
+                        <div class="download-buttons">
+                            <button class="download-btn" data-file="gpt-prompt">
+                                <i class="fas fa-robot"></i>
+                                GPT System-Prompt
+                            </button>
+                            <button class="download-btn" data-file="analysis">
+                                <i class="fas fa-chart-line"></i>
+                                Detaillierte Analyse
+                            </button>
+                            <button class="download-btn" data-file="image-prompt">
+                                <i class="fas fa-image"></i>
+                                Bild-Prompt
+                            </button>
+                            <button class="download-btn" data-file="config">
+                                <i class="fas fa-cog"></i>
+                                ChatGPT Konfiguration
+                            </button>
+                        </div>
+                    </div>
+
+                    <button id="restart-btn" class="restart-button">
+                        <i class="fas fa-redo"></i>
+                        Neue Analyse starten
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Loading Overlay -->
+        <div id="loading-overlay" class="loading-overlay">
+            <div class="spinner"></div>
+            <p>Analysiere deine Antworten...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
