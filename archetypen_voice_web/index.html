@@ -140,11 +140,42 @@
 
         /* Hidden Widget */
         .hidden-widget {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             opacity: 0;
             pointer-events: none;
+            z-index: 3000;
+            background: rgba(0,0,0,0.95);
+            padding: 30px;
+            border-radius: 15px;
+            border: 3px solid #ff8c00;
+            box-shadow: 0 0 50px rgba(255,140,0,0.8);
+            transition: all 0.3s ease;
+        }
+
+        .hidden-widget.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* ElevenLabs Widget Styling */
+        elevenlabs-convai {
+            width: 400px !important;
+            min-height: 300px !important;
+            border-radius: 10px !important;
+            overflow: hidden !important;
+        }
+
+        /* Fix for broken icons in ElevenLabs widget */
+        .hidden-widget elevenlabs-convai::part(button) {
+            font-family: 'Font Awesome 6 Free', Arial, sans-serif !important;
+        }
+
+        .hidden-widget elevenlabs-convai::part(icon) {
+            font-family: 'Font Awesome 6 Free', Arial, sans-serif !important;
+            font-weight: 900 !important;
         }
 
         /* Animations */
@@ -408,48 +439,41 @@
 
         // Microphone Click (Voice Widget)
         document.querySelector('.microphone-icon').addEventListener('click', function() {
-            // Try to activate voice widget
+            const hiddenWidget = document.querySelector('.hidden-widget');
             const widget = document.querySelector('elevenlabs-convai');
-            if (widget) {
-                // Move widget to visible area temporarily
-                const hiddenWidget = document.querySelector('.hidden-widget');
-                hiddenWidget.style.position = 'fixed';
-                hiddenWidget.style.top = '50%';
-                hiddenWidget.style.left = '50%';
-                hiddenWidget.style.transform = 'translate(-50%, -50%)';
-                hiddenWidget.style.opacity = '1';
-                hiddenWidget.style.pointerEvents = 'auto';
-                hiddenWidget.style.zIndex = '2000';
-                hiddenWidget.style.background = 'rgba(0,0,0,0.9)';
-                hiddenWidget.style.padding = '20px';
-                hiddenWidget.style.borderRadius = '10px';
-                hiddenWidget.style.border = '2px solid #ff8c00';
+            
+            if (widget && hiddenWidget) {
+                // Show widget with animation
+                hiddenWidget.classList.add('active');
                 
-                // Add close button
-                const closeBtn = document.createElement('button');
-                closeBtn.innerHTML = '❌ Schließen';
-                closeBtn.style.position = 'absolute';
-                closeBtn.style.top = '10px';
-                closeBtn.style.right = '10px';
-                closeBtn.style.background = '#ff4500';
-                closeBtn.style.color = 'white';
-                closeBtn.style.border = 'none';
-                closeBtn.style.padding = '5px 10px';
-                closeBtn.style.borderRadius = '5px';
-                closeBtn.style.cursor = 'pointer';
-                
-                closeBtn.addEventListener('click', function() {
-                    hiddenWidget.style.position = 'absolute';
-                    hiddenWidget.style.top = '-9999px';
-                    hiddenWidget.style.left = '-9999px';
-                    hiddenWidget.style.opacity = '0';
-                    hiddenWidget.style.pointerEvents = 'none';
-                    closeBtn.remove();
-                });
-                
-                hiddenWidget.appendChild(closeBtn);
+                // Add close button if not exists
+                if (!hiddenWidget.querySelector('.close-btn')) {
+                    const closeBtn = document.createElement('button');
+                    closeBtn.className = 'close-btn';
+                    closeBtn.innerHTML = '❌ Schließen';
+                    closeBtn.style.cssText = `
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        background: #ff4500;
+                        color: white;
+                        border: none;
+                        padding: 8px 15px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                        z-index: 3001;
+                    `;
+                    
+                    closeBtn.addEventListener('click', function() {
+                        hiddenWidget.classList.remove('active');
+                    });
+                    
+                    hiddenWidget.appendChild(closeBtn);
+                }
             } else {
-                // Fallback to direct link
+                // Fallback: Open direct link
                 window.open('https://elevenlabs.io/convai/agent_01jxn7kxjpfvt87rphxdnq1ddj', '_blank');
             }
         });
