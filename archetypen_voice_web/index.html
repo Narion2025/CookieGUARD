@@ -90,9 +90,9 @@
 
         /* Mikrofon Symbol */
         .microphone-icon {
-            position: absolute;
-            bottom: 40px;
-            right: 80px;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
             width: 80px;
             height: 80px;
             background: rgba(255,140,0,0.9);
@@ -107,6 +107,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             border: 3px solid rgba(255,255,255,0.3);
+            z-index: 200;
         }
 
         .microphone-icon:hover {
@@ -219,9 +220,11 @@
 
         <!-- Video Container (Center) -->
         <div class="video-container">
-            <div class="microphone-icon">
-                🎙️
-            </div>
+        </div>
+
+        <!-- Mikrofon Symbol (Bottom Right) -->
+        <div class="microphone-icon">
+            🎙️
         </div>
 
         <!-- Hidden ElevenLabs Widget (still functional) -->
