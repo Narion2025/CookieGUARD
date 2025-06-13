@@ -1,13 +1,11 @@
 {
-  "name": "archetypen-voice-bot",
+  "name": "archetypen-schmied",
   "version": "1.0.0",
-  "description": "Voice-powered Jung archetype analysis with personalized GPT prompt generation",
-  "main": "backend/server.js",
+  "description": "🔥 Mystischer Archetypen-Schmied mit ElevenLabs Voice Integration",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js",
-    "install-deps": "npm install",
-    "setup": "npm install && echo 'Please configure your .env file with API keys'"
+    "build": "echo 'Static site - no build needed' && mkdir -p dist && cp -r *.html *.css *.js images dist/ 2>/dev/null || true",
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
   },
   "keywords": [
     "jung",
@@ -15,20 +13,11 @@
     "psychology",
     "voice",
     "elevenlabs",
-    "openai",
-    "gpt",
-    "personality"
+    "mystisch",
+    "schmied"
   ],
   "author": "Benjamin Poersch",
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
   "engines": {
     "node": ">=16.0.0"
   }
