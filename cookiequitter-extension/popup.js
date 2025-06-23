@@ -687,4 +687,4 @@ window.addEventListener('beforeunload', () => {
 });
 
 console.log('🤖 CookieQuitter Popup Script loaded (rechtssichere Version)'); 
-console.log('🤖 CookieQuitter Popup Script loaded'); 
+console.log('🤖 CookieQuitter Popup Script loaded');

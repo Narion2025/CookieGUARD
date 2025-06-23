@@ -247,4 +247,4 @@ function manageAgents() {
 
 function connectCursorCloud() {
   mainWindow.webContents.send('connect-cursor-cloud');
-} 
+}

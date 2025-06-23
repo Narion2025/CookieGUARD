@@ -235,4 +235,4 @@ class ChatOrchestrator extends EventEmitter {
   }
 }
 
-module.exports = { ChatOrchestrator }; 
+module.exports = { ChatOrchestrator };

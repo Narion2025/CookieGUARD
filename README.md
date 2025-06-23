@@ -139,4 +139,4 @@ MIT License - siehe [LICENSE](LICENSE) Datei
 
 ---
 
-Built with ❤️ using Electron, Node.js, and multiple AI APIs 
+Built with ❤️ using Electron, Node.js, and multiple AI APIs

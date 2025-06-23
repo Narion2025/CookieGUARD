@@ -129,4 +129,4 @@ class OpenAIAdapter {
   }
 }
 
-module.exports = { OpenAIAdapter }; 
+module.exports = { OpenAIAdapter };

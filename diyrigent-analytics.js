@@ -531,4 +531,4 @@ if (typeof window.diyrigentAnalytics === 'undefined') {
 // Export for module systems
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = DIYrigentAnalytics;
-} 
+}

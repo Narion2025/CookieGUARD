@@ -556,4 +556,4 @@ chrome.runtime.onInstalled.addListener((details) => {
   }
 });
 
-console.log('🤖 CookieQuitter Background Script loaded (rechtssichere Version)'); 
+console.log('🤖 CookieQuitter Background Script loaded (rechtssichere Version)');

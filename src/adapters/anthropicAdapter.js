@@ -148,4 +148,4 @@ class AnthropicAdapter {
   }
 }
 
-module.exports = { AnthropicAdapter }; 
+module.exports = { AnthropicAdapter };
