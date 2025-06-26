@@ -155,4 +155,4 @@ class AgentRegistry {
   }
 }
 
-module.exports = { AgentRegistry }; 
+module.exports = { AgentRegistry };

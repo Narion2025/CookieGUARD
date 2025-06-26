@@ -158,4 +158,4 @@ class GoogleAdapter {
   }
 }
 
-module.exports = { GoogleAdapter }; 
+module.exports = { GoogleAdapter };

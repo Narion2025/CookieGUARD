@@ -38,4 +38,4 @@ contextBridge.exposeInMainWorld('multiAI', {
   removeListener: (channel, callback) => {
     ipcRenderer.removeListener(channel, callback);
   }
-}); 
+});

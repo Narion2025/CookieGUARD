@@ -295,4 +295,4 @@ class CursorAdapter {
   }
 }
 
-module.exports = { CursorAdapter }; 
+module.exports = { CursorAdapter };

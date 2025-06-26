@@ -486,4 +486,4 @@ class ABTestManager {
 - Customer Lifetime Value: +30%
 
 **Break-Even:** 4-6 Monate  
-**12-Monats-ROI:** 300-400% 
+**12-Monats-ROI:** 300-400%

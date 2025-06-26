@@ -203,4 +203,4 @@ window.addEventListener('error', (e) => {
 window.addEventListener('unhandledrejection', (e) => {
   console.error('Unbehandelte Promise-Ablehnung:', e.reason);
   utils.showNotification('Ein Fehler ist aufgetreten', 'error');
-}); 
+});
